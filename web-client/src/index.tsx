@@ -6,7 +6,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <Listings title={'TinyHouse  '} />
+  <Listings title={'Tiny-House'} />
 );
 
 reportWebVitals();

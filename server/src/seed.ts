@@ -49,8 +49,8 @@ const seed = async() => {
         } 
         
         console.log("[seed] : complete")
-    } catch {
-        throw new Error('failed to seed database!')
+    } catch(err) {
+        console.log('failed to seed database!', err)
     }
 }
 
