@@ -15,7 +15,7 @@ app.listen(port, () => {
 
 async function startserver(){
 
-  const db = await connectDatabase();
+  const db: Database = await connectDatabase();
   const server = new ApolloServer({ typeDefs, resolvers, context: () => ({ db }) });
 
   await server.start();
